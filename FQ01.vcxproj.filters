@@ -1,0 +1,1018 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{085e82d5-0b1e-41ab-a1b1-b7fb3a5d7ba8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="인트로">
+      <UniqueIdentifier>{62fb9ccc-a278-4794-b93d-312d815279d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ANI_인트로">
+      <UniqueIdentifier>{ee5b5d53-2c3e-475f-9469-b90c59f545f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playMap">
+      <UniqueIdentifier>{3230adac-43ff-41a4-af6e-5ab9fba81d0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playMap\KarionCastle">
+      <UniqueIdentifier>{687898c4-a6f8-4b25-b4c5-858e11666446}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="playMap\Main">
+      <UniqueIdentifier>{8eeb545c-e3dd-4610-9e0d-de89d5d50b62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainMenu">
+      <UniqueIdentifier>{e51f0da2-d256-4ef2-9b5a-099be41cd0d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{d5f9d10c-e25c-4941-89a1-aac2935820aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI">
+      <UniqueIdentifier>{d6ae4248-445e-470c-9669-62eede8880cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AI\Movement &amp; Navigation">
+      <UniqueIdentifier>{557015b0-6f0c-48f4-8566-a4036066b3bb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FQ01.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CApplication.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="IGame.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameFQ4.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="IScene.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroText.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CScreen.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroHeader.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroLoby.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CharactorPosition.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CUnit.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CMap.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Canimation.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="CImagefile.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="CMemoryBitmap.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Csprite.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroScene1.h">
+      <Filter>인트로</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroScene2.h">
+      <Filter>인트로</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroScene3.h">
+      <Filter>인트로</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroScene4.h">
+      <Filter>인트로</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroScene5.h">
+      <Filter>인트로</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroScene6.h">
+      <Filter>인트로</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroScene7.h">
+      <Filter>인트로</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroScene8.h">
+      <Filter>인트로</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroScene9.h">
+      <Filter>인트로</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroScene10.h">
+      <Filter>인트로</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="TIMELINE.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DELAY.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="BarsiaScene1.h">
+      <Filter>ANI_인트로</Filter>
+    </ClInclude>
+    <ClInclude Include="KarionScene1.h">
+      <Filter>ANI_인트로</Filter>
+    </ClInclude>
+    <ClInclude Include="CTileMap.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldBattle.h">
+      <Filter>ANI_인트로</Filter>
+    </ClInclude>
+    <ClInclude Include="KarionScene2.h">
+      <Filter>ANI_인트로</Filter>
+    </ClInclude>
+    <ClInclude Include="BarsiaScene2.h">
+      <Filter>ANI_인트로</Filter>
+    </ClInclude>
+    <ClInclude Include="Script.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="BarsiaScene3.h">
+      <Filter>ANI_인트로</Filter>
+    </ClInclude>
+    <ClInclude Include="BarsiaScene4.h">
+      <Filter>ANI_인트로</Filter>
+    </ClInclude>
+    <ClInclude Include="KarionScene3.h">
+      <Filter>ANI_인트로</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraManagement.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="KarionCastle_Altar.h">
+      <Filter>playMap\KarionCastle</Filter>
+    </ClInclude>
+    <ClInclude Include="KarionCastle_AresRoom.h">
+      <Filter>playMap\KarionCastle</Filter>
+    </ClInclude>
+    <ClInclude Include="KarionCastle_Armory.h">
+      <Filter>playMap\KarionCastle</Filter>
+    </ClInclude>
+    <ClInclude Include="KarionCastle_Hall.h">
+      <Filter>playMap\KarionCastle</Filter>
+    </ClInclude>
+    <ClInclude Include="KarionCastle_KingRoom.h">
+      <Filter>playMap\KarionCastle</Filter>
+    </ClInclude>
+    <ClInclude Include="KarionCastle_Lab.h">
+      <Filter>playMap\KarionCastle</Filter>
+    </ClInclude>
+    <ClInclude Include="KarionCastle_MeetingRoom.h">
+      <Filter>playMap\KarionCastle</Filter>
+    </ClInclude>
+    <ClInclude Include="KarionCastle_Outside.h">
+      <Filter>playMap\KarionCastle</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayMap.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveMapInfo.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayMain.h">
+      <Filter>playMap\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyInput.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayMenuUI.h">
+      <Filter>MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionMenuUI.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UIManagement.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AStarHandler.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="TileTest.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\2D\C2DMatrix.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\2D\geometry.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\2D\InvertedAABBox2D.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\2D\Transformations.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\2D\Vector2D.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\2D\Wall2D.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\2D\WallIntersectionTests.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\misc\Cgdi.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\misc\utils.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\misc\WindowUtils.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Graph\AStarHeuristicPolicies.h">
+      <Filter>AI\Movement &amp; Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Graph\GraphAlgorithms.h">
+      <Filter>AI\Movement &amp; Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Graph\GraphEdgeTypes.h">
+      <Filter>AI\Movement &amp; Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Graph\GraphNodeTypes.h">
+      <Filter>AI\Movement &amp; Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Graph\HandyGraphFunctions.h">
+      <Filter>AI\Movement &amp; Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Graph\NodeTypeEnumerations.h">
+      <Filter>AI\Movement &amp; Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Graph\SparseGraph.h">
+      <Filter>AI\Movement &amp; Navigation</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FQ01.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CApplication.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameFQ4.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CScreen.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroLoby.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CUnit.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CMap.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Canimation.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="CImagefile.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="CMemoryBitmap.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Csprite.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroScene1.cpp">
+      <Filter>인트로</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroScene2.cpp">
+      <Filter>인트로</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroScene3.cpp">
+      <Filter>인트로</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroScene4.cpp">
+      <Filter>인트로</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroScene5.cpp">
+      <Filter>인트로</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroScene6.cpp">
+      <Filter>인트로</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroScene7.cpp">
+      <Filter>인트로</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroScene8.cpp">
+      <Filter>인트로</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroScene9.cpp">
+      <Filter>인트로</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroScene10.cpp">
+      <Filter>인트로</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TIMELINE.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DELAY.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BarsiaScene1.cpp">
+      <Filter>ANI_인트로</Filter>
+    </ClCompile>
+    <ClCompile Include="KarionScene1.cpp">
+      <Filter>ANI_인트로</Filter>
+    </ClCompile>
+    <ClCompile Include="CTileMap.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldBattle.cpp">
+      <Filter>ANI_인트로</Filter>
+    </ClCompile>
+    <ClCompile Include="KarionScene2.cpp">
+      <Filter>ANI_인트로</Filter>
+    </ClCompile>
+    <ClCompile Include="BarsiaScene2.cpp">
+      <Filter>ANI_인트로</Filter>
+    </ClCompile>
+    <ClCompile Include="Script.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BarsiaScene3.cpp">
+      <Filter>ANI_인트로</Filter>
+    </ClCompile>
+    <ClCompile Include="BarsiaScene4.cpp">
+      <Filter>ANI_인트로</Filter>
+    </ClCompile>
+    <ClCompile Include="KarionScene3.cpp">
+      <Filter>ANI_인트로</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraManagement.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="KarionCastle_Altar.cpp">
+      <Filter>playMap\KarionCastle</Filter>
+    </ClCompile>
+    <ClCompile Include="KarionCastle_AresRoom.cpp">
+      <Filter>playMap\KarionCastle</Filter>
+    </ClCompile>
+    <ClCompile Include="KarionCastle_Armory.cpp">
+      <Filter>playMap\KarionCastle</Filter>
+    </ClCompile>
+    <ClCompile Include="KarionCastle_Hall.cpp">
+      <Filter>playMap\KarionCastle</Filter>
+    </ClCompile>
+    <ClCompile Include="KarionCastle_KingRoom.cpp">
+      <Filter>playMap\KarionCastle</Filter>
+    </ClCompile>
+    <ClCompile Include="KarionCastle_Lab.cpp">
+      <Filter>playMap\KarionCastle</Filter>
+    </ClCompile>
+    <ClCompile Include="KarionCastle_MeetingRoom.cpp">
+      <Filter>playMap\KarionCastle</Filter>
+    </ClCompile>
+    <ClCompile Include="KarionCastle_Outside.cpp">
+      <Filter>playMap\KarionCastle</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayMain.cpp">
+      <Filter>playMap\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayMenuUI.cpp">
+      <Filter>MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionMenuUI.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="UIManagement.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AStarHandler.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TileTest.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\2D\Vector2d.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\misc\Cgdi.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\misc\WindowUtils.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FQ01.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ01.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="lion.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="Intro2.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="Intro2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="Intro3.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="Intro4.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="Intro5.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="Intro6.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="Intro7.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="Intro8.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="Intro9.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="Intro10.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="Intro1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="BLACK.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="Loby.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="YellowBlock.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="Lobyempty.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="textbox.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="1.PNG">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="UIFRAME.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="SceneFrame.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\castel.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\lion.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Intro2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Intro3.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Intro4.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Intro5.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Intro6.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Intro7.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Intro8.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Intro9.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Intro10.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Intro1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\BLACK.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Loby.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\YellowBlock.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Lobyempty.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\barsiacastle.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\textbox.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\UIFRAME.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\SceneFrame.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\soldier01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\soldier02_1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\soldier02_2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\casteltest.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\바르시아왕 제넬루\genelu_1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\바르시아왕 제넬루\genelu_2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="fq4_imagefile\bitmap6.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\바르시아왕 제넬루\genelu_3.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\바르시아왕 제넬루\genelu_4.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\노호크왕 오라슨\orason_1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\노호크왕 오라슨\orason_2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\리스레이왕 라이오스\laios_1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\리스레이왕 라이오스\laios_2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\마시아왕 가비\gabi_1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\마시아왕 가비\gabi_2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\베닉크왕 케크\keck_1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\베닉크왕 케크\keck_2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\베닉크왕 케크\keck_3.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\세버트왕 사크\sark_1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\세버트왕 사크\sark_2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\세버트왕 사크\sark_3.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\알카나야왕 미솔렌\mysolen_1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\알카나야왕 미솔렌\mysolen_2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\에드윈왕 마레암\maream_1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\에드윈왕 마레암\maream_2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\char.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\screenINframe.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\베닉크왕 케크\keck.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\노호크왕 오라슨\orason.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\리스레이왕 라이오스\laios.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\물장군 오그\ogg.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\세버트왕 사크\sark.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\마시아왕 가비\gabi.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\알카나야왕 미솔렌\mysolen.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\에드윈왕 마레암\maream.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\배경병사\soldier01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\배경병사\soldier02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\바람장군 스리후트\thryhoot.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\불장군 몰드레드\moldred.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\흙의 장군 맥가이어\macgaia.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\자닐(아마도)\janil.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\바르시아왕 제넬루\genelu.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\NPCMessageBox.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\바람장군 스리후트\thryhoot_1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\흙의 장군 맥가이어\macgaia_1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\물장군 오그\ogg_1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="fq4_imagefile\bitmap5.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\불장군 몰드레드\moldred_1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\자닐(아마도)\janil_1.bmp.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\throneRoom.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\MessageBox_1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\MessageBox_2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\MessageBox_3.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\MessageBox_4.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\karion_meetingroom.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\대주교\archbishop.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\병사\soldier03.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\병사\soldier04.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\아레스\ares.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\애레인\aerain.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\곤라트\gonrad.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\병사\애크터.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\아레스\ares_stop.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\애레인\aerain_stop.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\대주교\archbishop_stop.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\곤라트\gonrad_stop.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\제넬루 장군\장군 뒷모습.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\바위 병사\rock_soldier_set.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\병사\soldier_set.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\병사\shield_soldier_set.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\제넬루의 장군\general_set.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\아레스\rocked_ares_set.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\EthroneRoom.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\제넬루의 장군\general_face.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\UI\ANI_INTRO3\frame.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Field.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\병사\soldier05 (1).bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\병사\궁병.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\병사\말탄애크터.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\병사\적장.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\병사\기마병01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Map\카리온성 왕실 맵.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Object\촛대\촛대 세트.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Object\갑옷 석상\갑옷 석상 세트.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\까마귀\까마귀 모음집.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Map\BarsiaJail.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\가라드\Garrard.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Object\화로\불꽃.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Magic Effect\제목 없음.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Magic Effect\test.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\그리핀\griffin.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Map\BarsiaJail_window.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Object\쇠창살\grating.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Map\BarsiaJail_grating_close.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Map\BarsiaJail_grating_open.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Map\BarsiaCastle.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Object\초록 깃발\Green Flag.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\라딘칼\radinkal_set.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\알프레드\alfred_set.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Map\KarionCastle_Part.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Map\KarionCastle_inside_part1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\UI\small_screen.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\자닐\janil.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Character\자닐\janil_1.bmp.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Map\카리온성 내부.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\IntroImg\Intro2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\IntroImg\Intro3.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\IntroImg\Intro4.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\IntroImg\Intro5.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\IntroImg\Intro6.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\IntroImg\Intro7.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\IntroImg\Intro8.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\IntroImg\Intro9.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\IntroImg\Intro10.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\IntroImg\Intro1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Magic Effect\BLACK.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\DebugImg\MoveO.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\DebugImg\MoveX.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\UI\PlayScreen\PlayScreen.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\DebugImg\UnitO.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Map\Karion_Castle\Karion_MeetingRoom.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Map\Karion_Castle\Karion_Hall.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\UI\UIFRAME.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Map\Karion_Castle\Karion_Lab.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Map\Karion_Castle\Karion_KingRoom.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Map\Karion_Castle\KarionCastle_AresRoom.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Map\Karion_Castle\Karion_Castle_Outside.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Map\Karion_Castle\Karion_Armory.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\Map\Karion_Castle\Karion_Altar.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\UI\PlayMainUI\Main.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\UI\PlayUI\게임플레이 플레이메뉴.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="fq4_imagefile\bitmap2.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\UI\PlayUI\기록 마우스 오프.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\UI\PlayUI\기록 정리.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\UI\PlayUI\부대이동 정리.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\UI\PlayUI\시간경과 정리.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\UI\PlayUI\외교 정리.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\UI\PlayUI\정보 정리.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\UI\PlayUI\탐색 정리.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\UI\PlayUI\편성 정리.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\UI\PlayUI\표시방식 정리.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\UI\PlayMainUI\MainMenuBG.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\UI\PlayUI\ActionMenu.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\UI\PlayUI\뒤로가기 정리.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\UI\PlayUI\actionMenuIcon.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FQ4_ImageFile\astartest.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

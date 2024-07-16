@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5267c550-64b0-4034-8574-23f43e2bedc1}</ProjectGuid>
+    <RootNamespace>FQ01</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WINDOWS_IGNORE_PACKING_MISMATH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ActionMenuUI.h" />
+    <ClInclude Include="AStarHandler.h" />
+    <ClInclude Include="BarsiaScene1.h" />
+    <ClInclude Include="BarsiaScene2.h" />
+    <ClInclude Include="BarsiaScene3.h" />
+    <ClInclude Include="BarsiaScene4.h" />
+    <ClInclude Include="CameraManagement.h" />
+    <ClInclude Include="Canimation.h" />
+    <ClInclude Include="CApplication.h" />
+    <ClInclude Include="CGameFQ4.h" />
+    <ClInclude Include="CharactorPosition.h" />
+    <ClInclude Include="CMap.h" />
+    <ClInclude Include="CMemoryBitmap.h" />
+    <ClInclude Include="Common\2D\C2DMatrix.h" />
+    <ClInclude Include="Common\2D\geometry.h" />
+    <ClInclude Include="Common\2D\InvertedAABBox2D.h" />
+    <ClInclude Include="Common\2D\Transformations.h" />
+    <ClInclude Include="Common\2D\Vector2D.h" />
+    <ClInclude Include="Common\2D\Wall2D.h" />
+    <ClInclude Include="Common\2D\WallIntersectionTests.h" />
+    <ClInclude Include="Common\Graph\AStarHeuristicPolicies.h" />
+    <ClInclude Include="Common\Graph\GraphAlgorithms.h" />
+    <ClInclude Include="Common\Graph\GraphEdgeTypes.h" />
+    <ClInclude Include="Common\Graph\GraphNodeTypes.h" />
+    <ClInclude Include="Common\Graph\HandyGraphFunctions.h" />
+    <ClInclude Include="Common\Graph\NodeTypeEnumerations.h" />
+    <ClInclude Include="Common\Graph\SparseGraph.h" />
+    <ClInclude Include="Common\misc\Cgdi.h" />
+    <ClInclude Include="Common\misc\utils.h" />
+    <ClInclude Include="Common\misc\WindowUtils.h" />
+    <ClInclude Include="CScreen.h" />
+    <ClInclude Include="CTileMap.h" />
+    <ClInclude Include="CUnit.h" />
+    <ClInclude Include="DELAY.h" />
+    <ClInclude Include="FieldBattle.h" />
+    <ClInclude Include="IGame.h" />
+    <ClInclude Include="CImagefile.h" />
+    <ClInclude Include="Csprite.h" />
+    <ClInclude Include="FQ01.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="IntroHeader.h" />
+    <ClInclude Include="IntroLoby.h" />
+    <ClInclude Include="IntroScene1.h" />
+    <ClInclude Include="IntroScene10.h" />
+    <ClInclude Include="IntroScene2.h" />
+    <ClInclude Include="IntroScene3.h" />
+    <ClInclude Include="IntroScene4.h" />
+    <ClInclude Include="IntroScene5.h" />
+    <ClInclude Include="IntroScene6.h" />
+    <ClInclude Include="IntroScene7.h" />
+    <ClInclude Include="IntroScene8.h" />
+    <ClInclude Include="IntroScene9.h" />
+    <ClInclude Include="IntroText.h" />
+    <ClInclude Include="IScene.h" />
+    <ClInclude Include="KarionCastle_Altar.h" />
+    <ClInclude Include="KarionCastle_AresRoom.h" />
+    <ClInclude Include="KarionCastle_Armory.h" />
+    <ClInclude Include="KarionCastle_Hall.h" />
+    <ClInclude Include="KarionCastle_KingRoom.h" />
+    <ClInclude Include="KarionCastle_Lab.h" />
+    <ClInclude Include="KarionCastle_MeetingRoom.h" />
+    <ClInclude Include="KarionCastle_Outside.h" />
+    <ClInclude Include="KarionScene1.h" />
+    <ClInclude Include="KarionScene2.h" />
+    <ClInclude Include="KarionScene3.h" />
+    <ClInclude Include="KeyInput.h" />
+    <ClInclude Include="MoveMapInfo.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="PlayMain.h" />
+    <ClInclude Include="PlayMap.h" />
+    <ClInclude Include="PlayMenuUI.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Script.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="GUI.h" />
+    <ClInclude Include="TileTest.h" />
+    <ClInclude Include="TIMELINE.h" />
+    <ClInclude Include="UIManagement.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ActionMenuUI.cpp" />
+    <ClCompile Include="AStarHandler.cpp" />
+    <ClCompile Include="BarsiaScene1.cpp" />
+    <ClCompile Include="BarsiaScene2.cpp" />
+    <ClCompile Include="BarsiaScene3.cpp" />
+    <ClCompile Include="BarsiaScene4.cpp" />
+    <ClCompile Include="CameraManagement.cpp" />
+    <ClCompile Include="Canimation.cpp" />
+    <ClCompile Include="CApplication.cpp" />
+    <ClCompile Include="CGameFQ4.cpp" />
+    <ClCompile Include="CImagefile.cpp" />
+    <ClCompile Include="CMap.cpp" />
+    <ClCompile Include="CMemoryBitmap.cpp" />
+    <ClCompile Include="Common\2D\Vector2d.cpp" />
+    <ClCompile Include="Common\misc\Cgdi.cpp" />
+    <ClCompile Include="Common\misc\WindowUtils.cpp" />
+    <ClCompile Include="CScreen.cpp" />
+    <ClCompile Include="Csprite.cpp" />
+    <ClCompile Include="CTileMap.cpp" />
+    <ClCompile Include="CUnit.cpp" />
+    <ClCompile Include="DELAY.cpp" />
+    <ClCompile Include="FieldBattle.cpp" />
+    <ClCompile Include="FQ01.cpp" />
+    <ClCompile Include="IntroLoby.cpp" />
+    <ClCompile Include="IntroScene1.cpp" />
+    <ClCompile Include="IntroScene10.cpp" />
+    <ClCompile Include="IntroScene2.cpp" />
+    <ClCompile Include="IntroScene3.cpp" />
+    <ClCompile Include="IntroScene4.cpp" />
+    <ClCompile Include="IntroScene5.cpp" />
+    <ClCompile Include="IntroScene6.cpp" />
+    <ClCompile Include="IntroScene7.cpp" />
+    <ClCompile Include="IntroScene8.cpp" />
+    <ClCompile Include="IntroScene9.cpp" />
+    <ClCompile Include="KarionCastle_Altar.cpp" />
+    <ClCompile Include="KarionCastle_AresRoom.cpp" />
+    <ClCompile Include="KarionCastle_Armory.cpp" />
+    <ClCompile Include="KarionCastle_Hall.cpp" />
+    <ClCompile Include="KarionCastle_KingRoom.cpp" />
+    <ClCompile Include="KarionCastle_Lab.cpp" />
+    <ClCompile Include="KarionCastle_MeetingRoom.cpp" />
+    <ClCompile Include="KarionCastle_Outside.cpp" />
+    <ClCompile Include="KarionScene1.cpp" />
+    <ClCompile Include="KarionScene2.cpp" />
+    <ClCompile Include="KarionScene3.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GUI.cpp" />
+    <ClCompile Include="PlayMain.cpp" />
+    <ClCompile Include="PlayMenuUI.cpp" />
+    <ClCompile Include="Script.cpp" />
+    <ClCompile Include="TileTest.cpp" />
+    <ClCompile Include="TIMELINE.cpp" />
+    <ClCompile Include="UIManagement.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FQ01.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="1.PNG" />
+    <Image Include="2.bmp" />
+    <Image Include="BLACK.bmp" />
+    <Image Include="FQ01.ico" />
+    <Image Include="FQ4_ImageFile\astartest.bmp" />
+    <Image Include="FQ4_ImageFile\barsiacastle.bmp" />
+    <Image Include="fq4_imagefile\bitmap2.bmp" />
+    <Image Include="fq4_imagefile\bitmap5.bmp" />
+    <Image Include="fq4_imagefile\bitmap6.bmp" />
+    <Image Include="FQ4_ImageFile\BLACK.bmp" />
+    <Image Include="FQ4_ImageFile\castel.bmp" />
+    <Image Include="FQ4_ImageFile\casteltest.bmp" />
+    <Image Include="FQ4_ImageFile\char.bmp" />
+    <Image Include="FQ4_ImageFile\Character\soldier01.bmp" />
+    <Image Include="FQ4_ImageFile\Character\soldier02_1.bmp" />
+    <Image Include="FQ4_ImageFile\Character\soldier02_2.bmp" />
+    <Image Include="FQ4_ImageFile\Character\가라드\Garrard.bmp" />
+    <Image Include="FQ4_ImageFile\Character\곤라트\gonrad.bmp" />
+    <Image Include="FQ4_ImageFile\Character\곤라트\gonrad_stop.bmp" />
+    <Image Include="FQ4_ImageFile\Character\그리핀\griffin.bmp" />
+    <Image Include="FQ4_ImageFile\Character\까마귀\까마귀 모음집.bmp" />
+    <Image Include="FQ4_ImageFile\Character\노호크왕 오라슨\orason.bmp" />
+    <Image Include="FQ4_ImageFile\Character\노호크왕 오라슨\orason_1.bmp" />
+    <Image Include="FQ4_ImageFile\Character\노호크왕 오라슨\orason_2.bmp" />
+    <Image Include="FQ4_ImageFile\Character\대주교\archbishop.bmp" />
+    <Image Include="FQ4_ImageFile\Character\대주교\archbishop_stop.bmp" />
+    <Image Include="FQ4_ImageFile\Character\라딘칼\radinkal_set.bmp" />
+    <Image Include="FQ4_ImageFile\Character\리스레이왕 라이오스\laios.bmp" />
+    <Image Include="FQ4_ImageFile\Character\리스레이왕 라이오스\laios_1.bmp" />
+    <Image Include="FQ4_ImageFile\Character\리스레이왕 라이오스\laios_2.bmp" />
+    <Image Include="FQ4_ImageFile\Character\마시아왕 가비\gabi.bmp" />
+    <Image Include="FQ4_ImageFile\Character\마시아왕 가비\gabi_1.bmp" />
+    <Image Include="FQ4_ImageFile\Character\마시아왕 가비\gabi_2.bmp" />
+    <Image Include="FQ4_ImageFile\Character\물장군 오그\ogg.bmp" />
+    <Image Include="FQ4_ImageFile\Character\물장군 오그\ogg_1.bmp" />
+    <Image Include="FQ4_ImageFile\Character\바람장군 스리후트\thryhoot.bmp" />
+    <Image Include="FQ4_ImageFile\Character\바람장군 스리후트\thryhoot_1.bmp" />
+    <Image Include="FQ4_ImageFile\Character\바르시아왕 제넬루\genelu.bmp" />
+    <Image Include="FQ4_ImageFile\Character\바르시아왕 제넬루\genelu_1.bmp" />
+    <Image Include="FQ4_ImageFile\Character\바르시아왕 제넬루\genelu_2.bmp" />
+    <Image Include="FQ4_ImageFile\Character\바르시아왕 제넬루\genelu_3.bmp" />
+    <Image Include="FQ4_ImageFile\Character\바르시아왕 제넬루\genelu_4.bmp" />
+    <Image Include="FQ4_ImageFile\Character\바위 병사\rock_soldier_set.bmp" />
+    <Image Include="FQ4_ImageFile\Character\배경병사\soldier01.bmp" />
+    <Image Include="FQ4_ImageFile\Character\배경병사\soldier02.bmp" />
+    <Image Include="FQ4_ImageFile\Character\베닉크왕 케크\keck.bmp" />
+    <Image Include="FQ4_ImageFile\Character\베닉크왕 케크\keck_1.bmp" />
+    <Image Include="FQ4_ImageFile\Character\베닉크왕 케크\keck_2.bmp" />
+    <Image Include="FQ4_ImageFile\Character\베닉크왕 케크\keck_3.bmp" />
+    <Image Include="FQ4_ImageFile\Character\병사\shield_soldier_set.bmp" />
+    <Image Include="FQ4_ImageFile\Character\병사\soldier03.bmp" />
+    <Image Include="FQ4_ImageFile\Character\병사\soldier04.bmp" />
+    <Image Include="FQ4_ImageFile\Character\병사\soldier05 (1).bmp" />
+    <Image Include="FQ4_ImageFile\Character\병사\soldier_set.bmp" />
+    <Image Include="FQ4_ImageFile\Character\병사\궁병.bmp" />
+    <Image Include="FQ4_ImageFile\Character\병사\기마병01.bmp" />
+    <Image Include="FQ4_ImageFile\Character\병사\말탄애크터.bmp" />
+    <Image Include="FQ4_ImageFile\Character\병사\애크터.bmp" />
+    <Image Include="FQ4_ImageFile\Character\병사\적장.bmp" />
+    <Image Include="FQ4_ImageFile\Character\불장군 몰드레드\moldred.bmp" />
+    <Image Include="FQ4_ImageFile\Character\불장군 몰드레드\moldred_1.bmp" />
+    <Image Include="FQ4_ImageFile\Character\세버트왕 사크\sark.bmp" />
+    <Image Include="FQ4_ImageFile\Character\세버트왕 사크\sark_1.bmp" />
+    <Image Include="FQ4_ImageFile\Character\세버트왕 사크\sark_2.bmp" />
+    <Image Include="FQ4_ImageFile\Character\세버트왕 사크\sark_3.bmp" />
+    <Image Include="FQ4_ImageFile\Character\아레스\ares.bmp" />
+    <Image Include="FQ4_ImageFile\Character\아레스\ares_stop.bmp" />
+    <Image Include="FQ4_ImageFile\Character\아레스\rocked_ares_set.bmp" />
+    <Image Include="FQ4_ImageFile\Character\알카나야왕 미솔렌\mysolen.bmp" />
+    <Image Include="FQ4_ImageFile\Character\알카나야왕 미솔렌\mysolen_1.bmp" />
+    <Image Include="FQ4_ImageFile\Character\알카나야왕 미솔렌\mysolen_2.bmp" />
+    <Image Include="FQ4_ImageFile\Character\알프레드\alfred_set.bmp" />
+    <Image Include="FQ4_ImageFile\Character\애레인\aerain.bmp" />
+    <Image Include="FQ4_ImageFile\Character\애레인\aerain_stop.bmp" />
+    <Image Include="FQ4_ImageFile\Character\에드윈왕 마레암\maream.bmp" />
+    <Image Include="FQ4_ImageFile\Character\에드윈왕 마레암\maream_1.bmp" />
+    <Image Include="FQ4_ImageFile\Character\에드윈왕 마레암\maream_2.bmp" />
+    <Image Include="FQ4_ImageFile\Character\자닐(아마도)\janil.bmp" />
+    <Image Include="FQ4_ImageFile\Character\자닐(아마도)\janil_1.bmp.bmp" />
+    <Image Include="FQ4_ImageFile\Character\자닐\janil.bmp" />
+    <Image Include="FQ4_ImageFile\Character\자닐\janil_1.bmp.bmp" />
+    <Image Include="FQ4_ImageFile\Character\제넬루 장군\장군 뒷모습.bmp" />
+    <Image Include="FQ4_ImageFile\Character\제넬루의 장군\general_face.bmp" />
+    <Image Include="FQ4_ImageFile\Character\제넬루의 장군\general_set.bmp" />
+    <Image Include="FQ4_ImageFile\Character\흙의 장군 맥가이어\macgaia.bmp" />
+    <Image Include="FQ4_ImageFile\Character\흙의 장군 맥가이어\macgaia_1.bmp" />
+    <Image Include="FQ4_ImageFile\DebugImg\MoveO.bmp" />
+    <Image Include="FQ4_ImageFile\DebugImg\MoveX.bmp" />
+    <Image Include="FQ4_ImageFile\DebugImg\UnitO.bmp" />
+    <Image Include="FQ4_ImageFile\EthroneRoom.bmp" />
+    <Image Include="FQ4_ImageFile\Field.bmp" />
+    <Image Include="FQ4_ImageFile\Intro1.bmp" />
+    <Image Include="FQ4_ImageFile\Intro10.bmp" />
+    <Image Include="FQ4_ImageFile\Intro2.bmp" />
+    <Image Include="FQ4_ImageFile\Intro3.bmp" />
+    <Image Include="FQ4_ImageFile\Intro4.bmp" />
+    <Image Include="FQ4_ImageFile\Intro5.bmp" />
+    <Image Include="FQ4_ImageFile\Intro6.bmp" />
+    <Image Include="FQ4_ImageFile\Intro7.bmp" />
+    <Image Include="FQ4_ImageFile\Intro8.bmp" />
+    <Image Include="FQ4_ImageFile\Intro9.bmp" />
+    <Image Include="FQ4_ImageFile\IntroImg\Intro1.bmp" />
+    <Image Include="FQ4_ImageFile\IntroImg\Intro10.bmp" />
+    <Image Include="FQ4_ImageFile\IntroImg\Intro2.bmp" />
+    <Image Include="FQ4_ImageFile\IntroImg\Intro3.bmp" />
+    <Image Include="FQ4_ImageFile\IntroImg\Intro4.bmp" />
+    <Image Include="FQ4_ImageFile\IntroImg\Intro5.bmp" />
+    <Image Include="FQ4_ImageFile\IntroImg\Intro6.bmp" />
+    <Image Include="FQ4_ImageFile\IntroImg\Intro7.bmp" />
+    <Image Include="FQ4_ImageFile\IntroImg\Intro8.bmp" />
+    <Image Include="FQ4_ImageFile\IntroImg\Intro9.bmp" />
+    <Image Include="FQ4_ImageFile\karion_meetingroom.bmp" />
+    <Image Include="FQ4_ImageFile\lion.bmp" />
+    <Image Include="FQ4_ImageFile\Loby.bmp" />
+    <Image Include="FQ4_ImageFile\Lobyempty.bmp" />
+    <Image Include="FQ4_ImageFile\Magic Effect\BLACK.bmp" />
+    <Image Include="FQ4_ImageFile\Magic Effect\test.bmp" />
+    <Image Include="FQ4_ImageFile\Magic Effect\제목 없음.bmp" />
+    <Image Include="FQ4_ImageFile\Map\BarsiaCastle.bmp" />
+    <Image Include="FQ4_ImageFile\Map\BarsiaJail.bmp" />
+    <Image Include="FQ4_ImageFile\Map\BarsiaJail_grating_close.bmp" />
+    <Image Include="FQ4_ImageFile\Map\BarsiaJail_grating_open.bmp" />
+    <Image Include="FQ4_ImageFile\Map\BarsiaJail_window.bmp" />
+    <Image Include="FQ4_ImageFile\Map\KarionCastle_inside_part1.bmp" />
+    <Image Include="FQ4_ImageFile\Map\KarionCastle_Part.bmp" />
+    <Image Include="FQ4_ImageFile\Map\Karion_Castle\KarionCastle_AresRoom.bmp" />
+    <Image Include="FQ4_ImageFile\Map\Karion_Castle\Karion_Altar.bmp" />
+    <Image Include="FQ4_ImageFile\Map\Karion_Castle\Karion_Armory.bmp" />
+    <Image Include="FQ4_ImageFile\Map\Karion_Castle\Karion_Castle_Outside.bmp" />
+    <Image Include="FQ4_ImageFile\Map\Karion_Castle\Karion_Hall.bmp" />
+    <Image Include="FQ4_ImageFile\Map\Karion_Castle\Karion_KingRoom.bmp" />
+    <Image Include="FQ4_ImageFile\Map\Karion_Castle\Karion_Lab.bmp" />
+    <Image Include="FQ4_ImageFile\Map\Karion_Castle\Karion_MeetingRoom.bmp" />
+    <Image Include="FQ4_ImageFile\Map\카리온성 내부.bmp" />
+    <Image Include="FQ4_ImageFile\Map\카리온성 왕실 맵.bmp" />
+    <Image Include="FQ4_ImageFile\MessageBox_1.bmp" />
+    <Image Include="FQ4_ImageFile\MessageBox_2.bmp" />
+    <Image Include="FQ4_ImageFile\MessageBox_3.bmp" />
+    <Image Include="FQ4_ImageFile\MessageBox_4.bmp" />
+    <Image Include="FQ4_ImageFile\NPCMessageBox.bmp" />
+    <Image Include="FQ4_ImageFile\Object\갑옷 석상\갑옷 석상 세트.bmp" />
+    <Image Include="FQ4_ImageFile\Object\쇠창살\grating.bmp" />
+    <Image Include="FQ4_ImageFile\Object\초록 깃발\Green Flag.bmp" />
+    <Image Include="FQ4_ImageFile\Object\촛대\촛대 세트.bmp" />
+    <Image Include="FQ4_ImageFile\Object\화로\불꽃.bmp" />
+    <Image Include="FQ4_ImageFile\SceneFrame.bmp" />
+    <Image Include="FQ4_ImageFile\screenINframe.bmp" />
+    <Image Include="FQ4_ImageFile\textbox.bmp" />
+    <Image Include="FQ4_ImageFile\throneRoom.bmp" />
+    <Image Include="FQ4_ImageFile\UIFRAME.bmp" />
+    <Image Include="FQ4_ImageFile\UI\ANI_INTRO3\frame.bmp" />
+    <Image Include="FQ4_ImageFile\UI\PlayMainUI\Main.bmp" />
+    <Image Include="FQ4_ImageFile\UI\PlayMainUI\MainMenuBG.bmp" />
+    <Image Include="FQ4_ImageFile\UI\PlayScreen\PlayScreen.bmp" />
+    <Image Include="FQ4_ImageFile\UI\PlayUI\ActionMenu.bmp" />
+    <Image Include="FQ4_ImageFile\UI\PlayUI\actionMenuIcon.bmp" />
+    <Image Include="FQ4_ImageFile\UI\PlayUI\게임플레이 플레이메뉴.bmp" />
+    <Image Include="FQ4_ImageFile\UI\PlayUI\기록 마우스 오프.bmp" />
+    <Image Include="FQ4_ImageFile\UI\PlayUI\기록 정리.bmp" />
+    <Image Include="FQ4_ImageFile\UI\PlayUI\뒤로가기 정리.bmp" />
+    <Image Include="FQ4_ImageFile\UI\PlayUI\부대이동 정리.bmp" />
+    <Image Include="FQ4_ImageFile\UI\PlayUI\시간경과 정리.bmp" />
+    <Image Include="FQ4_ImageFile\UI\PlayUI\외교 정리.bmp" />
+    <Image Include="FQ4_ImageFile\UI\PlayUI\정보 정리.bmp" />
+    <Image Include="FQ4_ImageFile\UI\PlayUI\탐색 정리.bmp" />
+    <Image Include="FQ4_ImageFile\UI\PlayUI\편성 정리.bmp" />
+    <Image Include="FQ4_ImageFile\UI\PlayUI\표시방식 정리.bmp" />
+    <Image Include="FQ4_ImageFile\UI\small_screen.bmp" />
+    <Image Include="FQ4_ImageFile\UI\UIFRAME.bmp" />
+    <Image Include="FQ4_ImageFile\YellowBlock.bmp" />
+    <Image Include="Intro1.bmp" />
+    <Image Include="Intro10.bmp" />
+    <Image Include="Intro2.bmp" />
+    <Image Include="Intro2.png" />
+    <Image Include="Intro3.bmp" />
+    <Image Include="Intro4.bmp" />
+    <Image Include="Intro5.bmp" />
+    <Image Include="Intro6.bmp" />
+    <Image Include="Intro7.bmp" />
+    <Image Include="Intro8.bmp" />
+    <Image Include="Intro9.bmp" />
+    <Image Include="lion.bmp" />
+    <Image Include="Loby.bmp" />
+    <Image Include="Lobyempty.bmp" />
+    <Image Include="SceneFrame.bmp" />
+    <Image Include="small.ico" />
+    <Image Include="textbox.bmp" />
+    <Image Include="UIFRAME.bmp" />
+    <Image Include="YellowBlock.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
