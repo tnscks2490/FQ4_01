@@ -279,6 +279,9 @@
     <ClInclude Include="Common\Graph\SparseGraph.h">
       <Filter>AI\Movement &amp; Navigation</Filter>
     </ClInclude>
+    <ClInclude Include="Tile_Map1.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FQ01.cpp">
@@ -439,6 +442,9 @@
     </ClCompile>
     <ClCompile Include="Common\misc\WindowUtils.cpp">
       <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile_Map1.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

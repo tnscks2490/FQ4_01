@@ -224,6 +224,7 @@
     <ClInclude Include="targetver.h" />
     <ClInclude Include="GUI.h" />
     <ClInclude Include="TileTest.h" />
+    <ClInclude Include="Tile_Map1.h" />
     <ClInclude Include="TIMELINE.h" />
     <ClInclude Include="UIManagement.h" />
   </ItemGroup>
@@ -284,6 +285,7 @@
     <ClCompile Include="PlayMenuUI.cpp" />
     <ClCompile Include="Script.cpp" />
     <ClCompile Include="TileTest.cpp" />
+    <ClCompile Include="Tile_Map1.cpp" />
     <ClCompile Include="TIMELINE.cpp" />
     <ClCompile Include="UIManagement.cpp" />
   </ItemGroup>
