@@ -149,7 +149,7 @@ void KarionCastle_Armory::onKeyDown(KeyInput* virtual_key)
 	{
 		for (int i = 0; i < 20; i++)
 		{
-			if (UnitPos.x == KarionArmory[i].x and UnitPos.y == KarionArmory[i].y)
+			if (UnitPos.x == KarionArmory[i].x && UnitPos.y == KarionArmory[i].y)
 				MoveMap(KarionArmory[i].MoveMapName);
 		}
 

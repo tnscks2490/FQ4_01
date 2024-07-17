@@ -63,12 +63,12 @@ void KarionScene3::CharAnimation(int delta)
             griffin.ChangeAnimation(L"Char_WS");
             ares.Alive = true;
         }
-        if (delta > 200 and delta < 235)
+        if (delta > 200 && delta < 235)
         {
             if (delta % 5 == 0) ares.Move(0, 16);
         }
         if (delta == 235) ares.ChangeAnimation(L"Char_FSUS");
-        if (delta >= 255 and delta < 300)
+        if (delta >= 255 && delta < 300)
         {
             if (delta == 255) ares.ChangeAnimation(L"Char_R");
             if (delta % 5 == 0) ares.Move(16, 0);
@@ -80,12 +80,12 @@ void KarionScene3::CharAnimation(int delta)
             griffin.Move(0, -20);
             griffin.ChangeAnimation(L"Char_FR");
         }
-        if (delta >= 320 and delta < 430)
+        if (delta >= 320 && delta < 430)
         {
             if (delta == 320) griffin.ChangeAnimation(L"Char_FLY_ALONE");
             if (delta % 5 == 0) griffin.Move(0, 10);
         }
-        if (delta >= 430 and delta < 460)
+        if (delta >= 430 && delta < 460)
         {
             if (delta == 430) ares.ChangeAnimation(L"Char_R");
             if (delta % 5 == 0) ares.Move(16, 0);
@@ -109,7 +109,7 @@ void KarionScene3::CharAnimation(int delta)
             ares.SetPosition(305, 320);
             ares.ChangeAnimation(L"Char_B");
         }
-        if (delta > 490 and delta < 535)
+        if (delta > 490 && delta < 535)
         {
             if (delta % 5 == 0) ares.Move(0, -16);
         }
@@ -131,12 +131,12 @@ void KarionScene3::CharAnimation(int delta)
             gonrad.ChangeAnimation(L"Char_FSDS");
         }
         if (delta == 560) gonrad.ChangeAnimation(L"Char_R");
-        if (delta > 560 and delta < 605)
+        if (delta > 560 && delta < 605)
         {
             if(delta % 5 == 0) gonrad.Move(16, 0);
         }
         if (delta == 605) gonrad.ChangeAnimation(L"Char_FSDS");
-        if (delta >= 615 and delta < 645)
+        if (delta >= 615 && delta < 645)
         {
             if (delta == 615) gonrad.ChangeAnimation(L"Char_F");
             if (delta % 5 == 0) gonrad.Move(0, 16);
@@ -269,7 +269,7 @@ void KarionScene3::CharAnimation(int delta)
                 alfred.Move(0, 16);
                 alfred.ChangeAnimation(L"Char_FSDS");
             }
-            if (delta >= 20 and delta < 65)
+            if (delta >= 20 && delta < 65)
             {
                 if (delta == 20)
                 {
@@ -290,7 +290,7 @@ void KarionScene3::CharAnimation(int delta)
                 alfred.ChangeAnimation(L"Char_FSDS");
                 radinkal.ChangeAnimation(L"Char_FSDS");
             }
-            if (delta > 65 and delta < 100)
+            if (delta > 65 && delta < 100)
             {
                 if (delta == 70)
                 {
@@ -419,7 +419,7 @@ void KarionScene3::CharAnimation(int delta)
                 alfred.ChangeAnimation(L"Char_LSUS");
             }
 
-            if (delta >= 30 and delta < 75)
+            if (delta >= 30 && delta < 75)
             {
                 if (delta == 30) ares.ChangeAnimation(L"Char_B");
                 if (delta == 40) radinkal.ChangeAnimation(L"Char_LSUS");
@@ -436,7 +436,7 @@ void KarionScene3::CharAnimation(int delta)
                 if (delta == 55) alfred.ChangeAnimation(L"Char_BSUS");
             }
             if (delta == 75) ares.ChangeAnimation(L"Char_BSDS");
-            if (delta >= 90 and delta < 120)
+            if (delta >= 90 && delta < 120)
             {
                 if (delta == 90) ares.ChangeAnimation(L"Char_L");
                 if (delta % 5 == 0)
@@ -448,7 +448,7 @@ void KarionScene3::CharAnimation(int delta)
                 if (delta == 110) radinkal.ChangeAnimation(L"Char_LSUS");
             }
 
-            if (delta >= 135 and delta < 155)
+            if (delta >= 135 && delta < 155)
             {
                 if (delta == 135) ares.ChangeAnimation(L"Char_B");
                 if (delta % 5 == 0)

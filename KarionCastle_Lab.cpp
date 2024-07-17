@@ -152,7 +152,7 @@ void KarionCastle_Lab::onKeyDown(KeyInput* virtual_key)
 	{
 		for (int i = 0; i < 20; i++)
 		{
-			if (UnitPos.x == KarionLab[i].x and UnitPos.y == KarionLab[i].y)
+			if (UnitPos.x == KarionLab[i].x && UnitPos.y == KarionLab[i].y)
 				MoveMap(KarionLab[i].MoveMapName);
 		}
 

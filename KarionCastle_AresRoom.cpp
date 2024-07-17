@@ -134,7 +134,7 @@ void KarionCastle_AresRoom::onKeyDown(KeyInput* virtual_key)
 	{
 		for (int i = 0; i < 8; i++)
 		{
-			if (UnitPos.x == KarionAresRoom[i].x and UnitPos.y == KarionAresRoom[i].y)
+			if (UnitPos.x == KarionAresRoom[i].x && UnitPos.y == KarionAresRoom[i].y)
 				MoveMap(KarionAresRoom[i].MoveMapName);
 		}
 	}

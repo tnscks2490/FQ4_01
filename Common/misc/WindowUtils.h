@@ -4,6 +4,7 @@
 
 #include <windows.h>
 #include <string>
+#include <commdlg.h>
 
 struct Vector2D;
 
@@ -54,7 +55,7 @@ Vector2D GetClientCursorPosition(HWND hwnd);
 //two handy functions from Mr Petzold. They open a common dialog box to
 //grab a filename
 void FileInitialize (HWND hwnd,
-                     OPENFILENAME& ofn,
+                     OPENFILENAMEA& ofn,
                      const std::string& defaultFileTypeDescription,
                      const std::string& defaultFileExtension);
 

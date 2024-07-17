@@ -5,6 +5,7 @@
 #include "misc/utils.h"
 #include "misc/Stream_Utility_Functions.h"
 
+#include <commdlg.h>
 
 
 //---------------------- ChangeMenuState ---------------------------------
@@ -63,12 +64,12 @@ bool CheckBufferLength(char* buff, int MaxLength, int& BufferLength)
 
 void ErrorBox(std::string& msg)
 {
-  MessageBox(NULL, msg.c_str(), "Error", MB_OK);
+  MessageBoxA(NULL, msg.c_str(), "Error", MB_OK);
 }
 
 void ErrorBox(char* msg)
 {
-  MessageBox(NULL, msg, "Error", MB_OK);
+  MessageBoxA(NULL, msg, "Error", MB_OK);
 }
 
 //gets the coordinates of the cursor relative to an active window 
@@ -102,21 +103,21 @@ Vector2D GetClientCursorPosition(HWND hwnd)
 //  client to use the file dialog common control
 //-----------------------------------------------------------------------------
 void FileInitialize (HWND hwnd,
-                     OPENFILENAME& ofn,
+                     OPENFILENAMEA& ofn,
                      const std::string& defaultFileTypeDescription,
                      const std::string& defaultFileExtension)
 {
   std::string filter = defaultFileTypeDescription + '\0' + "*." + defaultFileExtension + '\0' +
                        "All Files (*.*)" + '\0' + "*.*" + '\0' + '\0';
   
-   static TCHAR szFilter[255];
+   static CHAR szFilter[255];
 
    for (unsigned int i=0; i<filter.size(); ++i)
    {
      szFilter[i] = filter.at(i);
    }
      
-     ofn.lStructSize       = sizeof (OPENFILENAME) ;
+     ofn.lStructSize       = sizeof (OPENFILENAMEA) ;
      ofn.hwndOwner         = hwnd ;
      ofn.hInstance         = NULL ;
      ofn.lpstrFilter       = szFilter ;
@@ -142,12 +143,12 @@ void FileInitialize (HWND hwnd,
 
 
 BOOL FileOpenDlg (HWND               hwnd,
-                  PTSTR              pstrFileName,
-                  PTSTR              pstrTitleName,
+                  char*              pstrFileName,
+                  char* pstrTitleName,
                   const std::string& defaultFileTypeDescription,
                   const std::string& defaultFileExtension)
 {
-     OPENFILENAME ofn;
+     OPENFILENAMEA ofn;
 
      FileInitialize(hwnd, ofn, defaultFileTypeDescription, defaultFileExtension);
   
@@ -156,23 +157,23 @@ BOOL FileOpenDlg (HWND               hwnd,
      ofn.lpstrFileTitle    = pstrTitleName ;
      ofn.Flags             = OFN_HIDEREADONLY | OFN_CREATEPROMPT ;
      
-     return GetOpenFileName (&ofn) ;
+     return GetOpenFileNameA (&ofn) ;
 }
 
 BOOL FileSaveDlg (HWND               hwnd,
-                  PTSTR              pstrFileName,
-                  PTSTR              pstrTitleName,
+                  char* pstrFileName,
+                  char* pstrTitleName,
                   const std::string& defaultFileTypeDescription,
                   const std::string& defaultFileExtension)
 {
-     OPENFILENAME ofn; FileInitialize(hwnd, ofn, defaultFileTypeDescription, defaultFileExtension);
+     OPENFILENAMEA ofn; FileInitialize(hwnd, ofn, defaultFileTypeDescription, defaultFileExtension);
 
      ofn.hwndOwner         = hwnd ;
      ofn.lpstrFile         = pstrFileName ;
      ofn.lpstrFileTitle    = pstrTitleName ;
      ofn.Flags             = OFN_OVERWRITEPROMPT ;
      
-     return GetSaveFileName (&ofn) ;
+     return GetSaveFileNameA (&ofn) ;
 }
 
 //-------------------------- ResizeWindow -------------------------------------

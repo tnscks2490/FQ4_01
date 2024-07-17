@@ -58,8 +58,8 @@ PlayMenuUI::~PlayMenuUI()
 
 bool PlayMenuUI::Is마우스가내안에(int mouse_x, int mouse_y)
 {
-	if (GetPosX() <= mouse_x and mouse_x <= GetPosX() + Size_x
-		and GetPosY() <= mouse_y and mouse_y <= GetPosY() + Size_y)
+	if (GetPosX() <= mouse_x && mouse_x <= GetPosX() + Size_x
+		&& GetPosY() <= mouse_y && mouse_y <= GetPosY() + Size_y)
 	{
 		return true;
 	}
@@ -90,28 +90,28 @@ void PlayMenuUI::OnMouseMove(int mouse_x, int mouse_y)
 	int sy = mouse_y - GetPosY();
 
 	if (CurIcon != SelectNothing) mIcon[CurIcon].sprite.IconChange(1);
-	if (sy > 63 and sy < 96)
+	if (sy > 63 && sy < 96)
 	{
-		if (sx > 63 and sx < 96) CurIcon = Timelapse;
-		else if (sx >= 96 and sx < 128) CurIcon = Unitmove;
-		else if (sx >= 128 and sx < 160)
+		if (sx > 63 && sx < 96) CurIcon = Timelapse;
+		else if (sx >= 96 && sx < 128) CurIcon = Unitmove;
+		else if (sx >= 128 && sx < 160)
 		{
 			CurIcon = Search;
 			OutputDebugStringW(L"탐색\n");
 		}
-		else if (sx >= 160 and sx < 192)
+		else if (sx >= 160 && sx < 192)
 		{
 			CurIcon = Diplomacy;
 			OutputDebugStringW(L"외교\n");
 		}
 		else CurIcon = SelectNothing;
 	}
-	else if (sy >= 96 and sy < 128)
+	else if (sy >= 96 && sy < 128)
 	{
-		if (sx > 63 and sx < 96) CurIcon = Organization;
-		else if (sx >= 96 and sx < 128) CurIcon = Info;
-		else if (sx >= 128 and sx < 160) CurIcon = Method;
-		else if (sx >= 160 and sx < 192) CurIcon = Record;
+		if (sx > 63 && sx < 96) CurIcon = Organization;
+		else if (sx >= 96 && sx < 128) CurIcon = Info;
+		else if (sx >= 128 && sx < 160) CurIcon = Method;
+		else if (sx >= 160 && sx < 192) CurIcon = Record;
 		else CurIcon = SelectNothing;
 	}
 	else 
@@ -124,7 +124,7 @@ bool PlayMenuUI::OnMouseDown(int mouse_x, int mouse_y, int left_right)
 {
 	int sx = mouse_x - GetPosX();
 	int sy = mouse_y - GetPosY();
-	if (CurIcon != SelectNothing and left_right == 1)
+	if (CurIcon != SelectNothing && left_right == 1)
 	{
 		mIcon[CurIcon].sprite.IconChange(3);
 		return true;

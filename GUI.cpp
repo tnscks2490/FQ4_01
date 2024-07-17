@@ -68,7 +68,7 @@ void GUI::TextBoxDraw(HDC hdc)
 
 void GUI::ScriptDraw(HDC hdc, int idx, ScriptZip Sczip)
 {
-	if(TextUnit == nullptr or TextUnit->Id != Sczip.scriptchar) 
+	if(TextUnit == nullptr || TextUnit->Id != Sczip.scriptchar) 
 		SetScriptUnit(Sczip.scriptchar);
 	TextUnit->SetPosition(95, 190);
 	TextUnit->ChangeAnimation(Sczip.script[4]);

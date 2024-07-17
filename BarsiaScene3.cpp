@@ -93,7 +93,7 @@ void BarsiaScene3::CharAnimation(int delta)
             }
             if (delta % 5 == 0) garrard.Move(0,-10);
         }
-        else if ( delta >= 280 and delta < 305)
+        else if ( delta >= 280 && delta < 305)
         {
             if (delta == 280)
             {
@@ -105,7 +105,7 @@ void BarsiaScene3::CharAnimation(int delta)
                 CharFollowCamera(10, 0);
             }
         }
-        else if (delta >= 315 and delta <= 380)
+        else if (delta >= 315 && delta <= 380)
         {
             if (delta == 315)
             {
@@ -127,7 +127,7 @@ void BarsiaScene3::CharAnimation(int delta)
                     CharFollowCamera(0, -10);
                 }
             }
-            if (delta >= 360 and delta % 5 == 0 and delta < 380)
+            if (delta >= 360 && delta % 5 == 0 && delta < 380)
             {
                 if (delta == 360)
                 {
@@ -138,7 +138,7 @@ void BarsiaScene3::CharAnimation(int delta)
                 soldier2[1].Move(-10, 0);
             }
         }
-        else if (delta > 380 and delta < 390)
+        else if (delta > 380 && delta < 390)
         {
             if (delta == 381)
             {
@@ -251,7 +251,7 @@ void BarsiaScene3::CharAnimation(int delta)
             if (delta == 10)
                 YellowFlash->mScreen.mAlpha = 255;
 
-            if (YellowFlash->mScreen.mAlpha > 0 and delta % 2 == 0)
+            if (YellowFlash->mScreen.mAlpha > 0 && delta % 2 == 0)
                 YellowFlash->mScreen.mAlpha -= 5;
             if (delta == 119)
             {
@@ -261,7 +261,7 @@ void BarsiaScene3::CharAnimation(int delta)
                 ObjAniAllStart();
             }
         }
-        else if (delta >= 140 and delta < 285)
+        else if (delta >= 140 && delta < 285)
         {
             if (delta == 140)
 
@@ -274,7 +274,7 @@ void BarsiaScene3::CharAnimation(int delta)
                
             }
         }
-        else if (delta >= 295 and delta < 320)
+        else if (delta >= 295 && delta < 320)
         {
             if (delta == 295)
             {
@@ -291,7 +291,7 @@ void BarsiaScene3::CharAnimation(int delta)
             if (delta == 319)
                 garrard.ChangeAnimation(L"Char_B");
         }
-        else if (delta >= 330 and delta < 375)
+        else if (delta >= 330 && delta < 375)
         {
             if (delta % 5 == 0)
             {
@@ -397,13 +397,13 @@ void BarsiaScene3::CharAnimation(int delta)
             }
             if (delta == 10)
                 griffin[0].Alive = true;
-            if (delta > 10 and delta < 15)
+            if (delta > 10 && delta < 15)
                 griffin[0].Move(0, 10);
-            else if (delta >= 15 and delta < 20)
+            else if (delta >= 15 && delta < 20)
                 griffin[0].Move(10, 0);
-            else if (delta >= 20 and delta < 25)
+            else if (delta >= 20 && delta < 25)
                 griffin[0].Move(0, 10);
-            else if (delta >= 25 and delta < 80)
+            else if (delta >= 25 && delta < 80)
             {
                 griffin[0].Move(10, 0);
 
@@ -412,17 +412,17 @@ void BarsiaScene3::CharAnimation(int delta)
 
                 if (delta == 40)
                     griffin[1].Alive = true;
-                if (delta > 40 and delta < 45)
+                if (delta > 40 && delta < 45)
                     griffin[1].Move(5, 0);
-                else if (delta >= 45 and delta < 50)
+                else if (delta >= 45 && delta < 50)
                     griffin[1].Move(0, 5);
-                else if (delta >= 50 and delta < 80)
+                else if (delta >= 50 && delta < 80)
                     griffin[1].Move(10, 0);
 
       
                 
             }
-            else if (delta >= 80 and delta < 130)
+            else if (delta >= 80 && delta < 130)
             {
                 griffin[1].Move(10, 0);
 
@@ -432,11 +432,11 @@ void BarsiaScene3::CharAnimation(int delta)
 
                 if (delta == 80)
                     griffin[2].Alive = true;
-                if(delta > 80 and delta < 85)
+                if(delta > 80 && delta < 85)
                     griffin[2].Move(5, 0);
-                else if(delta >=85 and delta < 90)
+                else if(delta >=85 && delta < 90)
                     griffin[2].Move(0, 5);
-                else if(delta >= 90 and delta <130)
+                else if(delta >= 90 && delta <130)
                     griffin[2].Move(10, 0);
 
                 if (delta == 129)
@@ -501,14 +501,14 @@ void BarsiaScene3::CharAnimation(int delta)
                 CharFollowCamera(30, 0);
                 garrard.Move(-30, 0);
             }
-            if (delta >= 20 and delta <= 40)
+            if (delta >= 20 && delta <= 40)
             {
                 if (delta % 5 == 0)
                 {
                     ares.Move(10, 0);
                 }
             }
-            if (delta >= 50 and delta < 185)
+            if (delta >= 50 && delta < 185)
             {
                 if (delta == 50)
                 {
@@ -554,7 +554,7 @@ void BarsiaScene3::CharAnimation(int delta)
 
                 
             }
-            if (delta > 185 and delta < 230)
+            if (delta > 185 && delta < 230)
             {
                 if(delta == 186) ares.ChangeAnimation(L"Char_F");
                 if (delta % 5 == 0)
@@ -569,7 +569,7 @@ void BarsiaScene3::CharAnimation(int delta)
             if (delta == 240)
                 ares.ChangeAnimation(L"Char_R");
 
-            if (delta > 240 and delta < 335)
+            if (delta > 240 && delta < 335)
             {
                 if (delta % 5 == 0)
                     ares.Move(10, 0);
@@ -578,7 +578,7 @@ void BarsiaScene3::CharAnimation(int delta)
             if (delta == 335)
                 ares.ChangeAnimation(L"Char_FSUS");
 
-            if (delta > 340 and delta < 390)
+            if (delta > 340 && delta < 390)
             {
                 if (delta == 341)
                     ares.ChangeAnimation(L"Char_B");
@@ -620,7 +620,7 @@ void BarsiaScene3::CharAnimation(int delta)
                 ares.Move(0, -25);
             }
             if (delta == 535) ares.ChangeAnimation(L"Char_FSDS");
-            if (delta >= 540 and delta < 560)
+            if (delta >= 540 && delta < 560)
             {
                 if (delta == 540) ares.ChangeAnimation(L"Char_RSUS");
                 if (delta % 5 == 0)
@@ -654,7 +654,7 @@ void BarsiaScene3::CharAnimation(int delta)
 
                 griffin[3].Move( 0, 100);
             }
-            if (delta > 600 and delta <= 710)
+            if (delta > 600 && delta <= 710)
             {
                 if (delta % 2 == 0)
                 {
@@ -671,7 +671,7 @@ void BarsiaScene3::CharAnimation(int delta)
             }
             if(delta == 712) cmap2->CameraMove(0, 20);
 
-            if (delta > 712 and delta < 740)
+            if (delta > 712 && delta < 740)
             {
                 if (delta % 2 == 0)
                     griffin[3].Move(0, 20);

@@ -123,7 +123,7 @@ public:
   {
     int tot = 0;
 
-    for (EdgeListVector::const_iterator curEdge = m_Edges.begin();
+    for (class EdgeListVector::const_iterator curEdge = m_Edges.begin();
          curEdge != m_Edges.end();
          ++curEdge)
     {

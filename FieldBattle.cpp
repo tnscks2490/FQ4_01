@@ -14,7 +14,7 @@ FieldBattle::FieldBattle()
     aekter = new AEKTER;
     UI = new GUI(L"FieldBattle");
     FinishedCheck = false;
-    hFont = CreateFontW(18, 0, 0, 0, 0, 0, 0, 0, HANGUL_CHARSET, 0, 0, 0, VARIABLE_PITCH or FF_ROMAN, TEXT("±Ã¼­"));
+    hFont = CreateFontW(18, 0, 0, 0, 0, 0, 0, 0, HANGUL_CHARSET, 0, 0, 0, VARIABLE_PITCH || FF_ROMAN, TEXT("±Ã¼­"));
     Timeline = new TIMELINE(4);
     CTilemap = new CTileMap(38, 29);
     mScript = new Script(UI->CurruntScene);
@@ -205,7 +205,7 @@ void FieldBattle::timelineIndex3(int delta)
             }
         }*/
     }
-    else if (delta > 300 and delta < 370)
+    else if (delta > 300 && delta < 370)
     {
         if (delta == 301)
         {

@@ -52,8 +52,8 @@ ActionMenuUI::~ActionMenuUI()
 
 bool ActionMenuUI::Is마우스가내안에(int mouse_x, int mouse_y)
 {
-	if (GetPosX() <= mouse_x and mouse_x <= GetPosX() + Size_x
-		and GetPosY() <= mouse_y and mouse_y <= GetPosY() + Size_y)
+	if (GetPosX() <= mouse_x && mouse_x <= GetPosX() + Size_x
+		&& GetPosY() <= mouse_y && mouse_y <= GetPosY() + Size_y)
 	{
 		return true;
 	}
@@ -77,10 +77,10 @@ void ActionMenuUI::OnMouseMove(int mouse_x, int mouse_y)
 	int sy = mouse_y - GetPosY();
 
 	if (CurIcon != SelectNothing) mIcon[CurIcon].sprite.IconChange(1);
-	if (sy >= 0 and sy <= 32)
+	if (sy >= 0 && sy <= 32)
 	{
-		if (sx >= 192 and sx < 224) CurIcon = Info;
-		else if (sx >= 224 and sx < 256) CurIcon = Exit;
+		if (sx >= 192 && sx < 224) CurIcon = Info;
+		else if (sx >= 224 && sx < 256) CurIcon = Exit;
 		else CurIcon = SelectNothing;
 	}
 	else
@@ -113,7 +113,7 @@ bool ActionMenuUI::OnMouseDown(int mouse_x, int mouse_y, int left_right)
 {
 	int sx = mouse_x - GetPosX();
 	int sy = mouse_y - GetPosY();
-	if (CurIcon != SelectNothing and left_right == 1)
+	if (CurIcon != SelectNothing && left_right == 1)
 	{
 		mIcon[CurIcon].sprite.IconChange(2);
 		return true;

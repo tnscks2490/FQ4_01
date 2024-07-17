@@ -136,7 +136,7 @@ void KarionCastle_Altar::onKeyDown(KeyInput* virtual_key)
 	{
 		for (int i = 0; i < 20; i++)
 		{
-			if (UnitPos.x == KarionAltar[i].x and UnitPos.y == KarionAltar[i].y)
+			if (UnitPos.x == KarionAltar[i].x && UnitPos.y == KarionAltar[i].y)
 				MoveMap(KarionAltar[i].MoveMapName);
 		}
 

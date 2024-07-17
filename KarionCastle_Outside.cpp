@@ -177,7 +177,7 @@ void KarionCastle_Outside::onKeyDown(KeyInput* virtual_key)
 		{
 			for (int i = 0; i < 20; i++)
 			{
-				if (UnitPos.x == KarionOutSide[i].x and UnitPos.y == KarionOutSide[i].y)
+				if (UnitPos.x == KarionOutSide[i].x && UnitPos.y == KarionOutSide[i].y)
 					MoveMap(KarionOutSide[i].MoveMapName);
 			}
 		}

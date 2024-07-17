@@ -65,11 +65,11 @@ void KarionScene2::CharAnimation(int delta)
             if (delta == 1) aerain.ChangeAnimation(L"Char_F");
             if(delta % 5 == 0) aerain.SetPosition(aerain.FrameSprite.mdestX, aerain.FrameSprite.mdestY + 5);
         }
-        else if (delta >= 100 and delta < 110)
+        else if (delta >= 100 && delta < 110)
         {
             if (delta == 100) aerain.ChangeAnimation(L"Char_FSDS");
         }
-        else if (delta >= 110 and delta < 205)
+        else if (delta >= 110 && delta < 205)
         {
             if (delta == 110) aerain.ChangeAnimation(L"Char_L");
             if (delta % 5 == 0) aerain.SetPosition(aerain.FrameSprite.mdestX-5, aerain.FrameSprite.mdestY);
@@ -89,22 +89,22 @@ void KarionScene2::CharAnimation(int delta)
             if(delta % 5 == 0) aerain.SetPosition(aerain.FrameSprite.mdestX+5, aerain.FrameSprite.mdestY);
             if (delta == 84) aerain.ChangeAnimation(L"Char_RSUS");
         }
-        else if (delta > 84 and delta < 110)
+        else if (delta > 84 && delta < 110)
         {
             if (delta == 95) aerain.ChangeAnimation(L"Char_FSUS");
         }
-        else if (delta > 109 and delta < 175)
+        else if (delta > 109 && delta < 175)
         {
             if (delta == 110) aerain.ChangeAnimation(L"Char_F");
             if (delta % 5 == 0) aerain.SetPosition(aerain.FrameSprite.mdestX, aerain.FrameSprite.mdestY-5);
             if (delta == 174) aerain.ChangeAnimation(L"Char_FSDS");
         }
-        else if (delta > 200 and delta < 230)
+        else if (delta > 200 && delta < 230)
         {
             if (delta == 201) aerain.ChangeAnimation(L"Char_F");
             if (delta % 5 == 0) aerain.SetPosition(aerain.FrameSprite.mdestX, aerain.FrameSprite.mdestY + 10);
         }
-        else if (delta >= 230 and delta < 320)
+        else if (delta >= 230 && delta < 320)
         {
             if (delta == 230) aerain.ChangeAnimation(L"Char_BS");
             if (delta == 240) aerain.SetPosition(aerain.FrameSprite.mdestX, aerain.FrameSprite.mdestY + 15);
@@ -113,12 +113,12 @@ void KarionScene2::CharAnimation(int delta)
             if (delta == 300) armor[1].ChangeAnimation(L"Char_FS");
 
         }
-        else if (delta >= 320 and delta < 400)
+        else if (delta >= 320 && delta < 400)
         {
             if (delta == 320) aerain.ChangeAnimation(L"Char_L");
             if (delta % 5 == 0) aerain.SetPosition(aerain.FrameSprite.mdestX-5, aerain.FrameSprite.mdestY);
         }
-        else if (delta >= 400 and delta < 420)
+        else if (delta >= 400 && delta < 420)
         {
             if (delta == 400) aerain.ChangeAnimation(L"Char_LSUS");
         }
@@ -158,7 +158,7 @@ void KarionScene2::CharAnimation(int delta)
                 armor[1].CameraFollow(0, 1);
             }
         }
-        else if (delta >= 80 and delta <= 340)
+        else if (delta >= 80 && delta <= 340)
         {
             if (delta == 80)
             {
@@ -264,7 +264,7 @@ void KarionScene2::CharAnimation(int delta)
                 aerain.SetPosition(aerain.FrameSprite.mdestX-32, aerain.FrameSprite.mdestY);
             }
         }
-        else if (delta >= 30 and delta < 100)
+        else if (delta >= 30 && delta < 100)
         {
             if (delta == 30) aerain.ChangeAnimation(L"Char_F");
             if (delta % 5 == 0)

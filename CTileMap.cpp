@@ -140,7 +140,7 @@ void CTileMap::SetTileUnit3X3(CTileUnit* tunit, POS Pos)
 
 bool CTileMap::CheckMapEnd(CTileUnit* tunit)
 {
-	if (tunit->mPosition.x < 0 or tunit->mPosition.x > tileWidth - 2)
+	if (tunit->mPosition.x < 0 || tunit->mPosition.x > tileWidth - 2)
 		 return true;
 	return false;
 }
@@ -473,22 +473,22 @@ bool CTileMap::Check4dir(CTileUnit* tunit,int dir)
 		switch (dir)
 		{
 		case UP:
-			if (GetTile(pos.x, pos.y - 1).tunit == nullptr and GetTile(pos.x + 1, pos.y - 1).tunit == nullptr)
+			if (GetTile(pos.x, pos.y - 1).tunit == nullptr && GetTile(pos.x + 1, pos.y - 1).tunit == nullptr)
 				return true;
 			break;
 		case DOWN:
 			if (GetTile(pos.x, pos.y + 2).tunit == nullptr 
-				and GetTile(pos.x + 1, pos.y + 2).tunit == nullptr)
+				&& GetTile(pos.x + 1, pos.y + 2).tunit == nullptr)
 				return true;
 			break;
 		case LEFT:
 			if (GetTile(pos.x-1, pos.y).tunit == nullptr
-				and GetTile(pos.x - 1, pos.y + 1).tunit == nullptr)
+				&& GetTile(pos.x - 1, pos.y + 1).tunit == nullptr)
 				return true;
 			break;
 		case RIGHT:
 			if (GetTile(pos.x +2, pos.y).tunit == nullptr
-				and GetTile(pos.x +2, pos.y + 1).tunit == nullptr)
+				&& GetTile(pos.x +2, pos.y + 1).tunit == nullptr)
 				return true;
 			break;
 		default:
@@ -501,26 +501,26 @@ bool CTileMap::Check4dir(CTileUnit* tunit,int dir)
 		{
 		case UP:
 			if (GetTile(pos.x, pos.y - 1).tunit == nullptr
-				and GetTile(pos.x + 1, pos.y - 1).tunit == nullptr
-				and GetTile(pos.x + 2, pos.y -1).tunit == nullptr)
+				&& GetTile(pos.x + 1, pos.y - 1).tunit == nullptr
+				&& GetTile(pos.x + 2, pos.y -1).tunit == nullptr)
 				return true;
 			break;
 		case DOWN:
 			if (GetTile(pos.x, pos.y +3).tunit == nullptr
-				and GetTile(pos.x + 1, pos.y + 3).tunit == nullptr
-				and GetTile(pos.x + 2, pos.y + 3).tunit == nullptr)
+				&& GetTile(pos.x + 1, pos.y + 3).tunit == nullptr
+				&& GetTile(pos.x + 2, pos.y + 3).tunit == nullptr)
 				return true;
 			break;
 		case LEFT:
 			if (GetTile(pos.x-1, pos.y ).tunit == nullptr
-				and GetTile(pos.x - 1, pos.y + 1).tunit == nullptr
-				and GetTile(pos.x - 1, pos.y + 2).tunit == nullptr)
+				&& GetTile(pos.x - 1, pos.y + 1).tunit == nullptr
+				&& GetTile(pos.x - 1, pos.y + 2).tunit == nullptr)
 				return true;
 			break;
 		case RIGHT:
 			if (GetTile(pos.x +3, pos.y).tunit == nullptr
-				and GetTile(pos.x + 3, pos.y + 1).tunit == nullptr
-				and GetTile(pos.x + 3, pos.y + 2).tunit == nullptr)
+				&& GetTile(pos.x + 3, pos.y + 1).tunit == nullptr
+				&& GetTile(pos.x + 3, pos.y + 2).tunit == nullptr)
 				return true;
 			break;
 		default:
@@ -601,36 +601,36 @@ void CTileMap::MoveTUnit(CTileUnit* tunit, int dir)
 		switch (tunit->dir)
 		{
 		case UP:
-			if (pos.y >= 10 and pos.y < tileHeight - 9)
+			if (pos.y >= 10 && pos.y < tileHeight - 9)
 			{
-				if (mapInfo->CameraY > 0 and mapInfo->CameraY <= mapInfo->mScreen.mSrcHeight - 304)
+				if (mapInfo->CameraY > 0 && mapInfo->CameraY <= mapInfo->mScreen.mSrcHeight - 304)
 				{
 					mapInfo->CameraMove(0, -16);
 				}
 			}
 			break;
 		case DOWN:
-			if (pos.y > 10 and pos.y <= tileHeight)
+			if (pos.y > 10 && pos.y <= tileHeight)
 			{
-				if (mapInfo->CameraY >= 0 and mapInfo->CameraY < mapInfo->mScreen.mSrcHeight - 304)
+				if (mapInfo->CameraY >= 0 && mapInfo->CameraY < mapInfo->mScreen.mSrcHeight - 304)
 				{
 					mapInfo->CameraMove(0, 16);
 				}
 			}
 			break;
 		case LEFT:
-			if (pos.x >= 18 and pos.x < tileWidth - 18)
+			if (pos.x >= 18 && pos.x < tileWidth - 18)
 			{
-				if (mapInfo->CameraX > 0 and mapInfo->CameraX <= mapInfo->mScreen.mSrcWidth - 608)
+				if (mapInfo->CameraX > 0 && mapInfo->CameraX <= mapInfo->mScreen.mSrcWidth - 608)
 				{
 					mapInfo->CameraMove(-16, 0);
 				}
 			}
 			break;
 		case RIGHT:
-			if (pos.x > 18 and pos.x <= tileWidth - 18)
+			if (pos.x > 18 && pos.x <= tileWidth - 18)
 			{
-				if (mapInfo->CameraX >= 0 and mapInfo->CameraX < mapInfo->mScreen.mSrcWidth - 608)
+				if (mapInfo->CameraX >= 0 && mapInfo->CameraX < mapInfo->mScreen.mSrcWidth - 608)
 				{
 					mapInfo->CameraMove(16, 0);
 				}
@@ -892,9 +892,9 @@ void CTileUnit::Tick(int delta, POS mPos)
 
 void CTileUnit::FindTarget()
 {
-	if (mrank == 2 or mrank == 5)
+	if (mrank == 2 || mrank == 5)
 		mTarget = mTilemap->FindGKing();
-	else if (mrank == 1 or mrank == 3 or mrank == 4 or mrank == 6)
+	else if (mrank == 1 || mrank == 3 || mrank == 4 || mrank == 6)
 		mTarget = mTilemap->FIndAKing();
 }
 
@@ -931,24 +931,24 @@ void CTileUnit::Move(int dir)
 	switch (dir)
 	{
 	case UP:
-		if (mTilemap->GetTile(pos.x, pos.y - 1).tunit == nullptr and
+		if (mTilemap->GetTile(pos.x, pos.y - 1).tunit == nullptr &&
 			mTilemap->GetTile(pos.x + 1, pos.y - 1).tunit == nullptr)
 			mTilemap->MoveTileUnit(this, UP);
 			break;
 	case DOWN:
-		if (mTilemap->GetTile(pos.x, pos.y + 2).tunit == nullptr and
+		if (mTilemap->GetTile(pos.x, pos.y + 2).tunit == nullptr &&
 			mTilemap->GetTile(pos.x + 1, pos.y + 2).tunit == nullptr)
 			mTilemap->MoveTileUnit(this, DOWN);
 
 			break;
 	case LEFT:
-		if (mTilemap->GetTile(pos.x - 1, pos.y).tunit == nullptr and
+		if (mTilemap->GetTile(pos.x - 1, pos.y).tunit == nullptr &&
 			mTilemap->GetTile(pos.x - 1, pos.y + 1).tunit == nullptr)
 			mTilemap->MoveTileUnit(this, LEFT);
 			break;
 	case RIGHT:
 		if (mTilemap->GetTile(pos.x + 2, pos.y).tunit == nullptr
-			and mTilemap->GetTile(pos.x + 2, pos.y + 1).tunit == nullptr)
+			&& mTilemap->GetTile(pos.x + 2, pos.y + 1).tunit == nullptr)
 			mTilemap->MoveTileUnit(this, RIGHT);
 		break;
 	default:

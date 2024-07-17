@@ -182,7 +182,7 @@ void BarsiaScene1::CharAnimation(int delta)
         {
             if (delta == 20) sgenelu.Move(0, 32);
             if (delta == 30) sgenelu.ChangeAnimation(L"Char_FLS");
-            if (delta > 30 and delta < 65)
+            if (delta > 30 && delta < 65)
             {
                 if (delta == 35) sark.ChangeAnimation(L"Char_B");
                 if (delta % 5 == 0) sark.Move(0, -16);
