@@ -2,14 +2,14 @@
 #include "Tile_Map1.h"
 #include "misc/Cgdi.h"
 #include "Graph/HandyGraphFunctions.h"
-#include "game/EntityManager.h"
+#include "Game/EntityManager.h"
 #include "constants.h"
-
+#include "lua/Raven_Scriptor.h"
 #include "misc/WindowUtils.h"
-
+#include "objectname.h"
 //uncomment to write object creation/deletion to debug console
 #define  LOG_CREATIONAL_STUFF
-//#include "debug/DebugConsole.h"
+#include "debug/DebugConsole.h"
 
 
 //----------------------------- ctor ------------------------------------------

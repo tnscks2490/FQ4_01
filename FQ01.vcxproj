@@ -215,6 +215,7 @@
     <ClInclude Include="KarionScene3.h" />
     <ClInclude Include="KeyInput.h" />
     <ClInclude Include="MoveMapInfo.h" />
+    <ClInclude Include="objectname.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="PlayMain.h" />
     <ClInclude Include="PlayMap.h" />
