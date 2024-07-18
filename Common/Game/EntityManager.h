@@ -1,5 +1,4 @@
-#ifndef ENTITYMANAGER_H
-#define ENTITYMANAGER_H
+#pragma once
 #pragma warning (disable:4786)
 //------------------------------------------------------------------------
 //
@@ -57,11 +56,3 @@ public:
   //clears all entities from the entity map
   void            Reset(){m_EntityMap.clear();}
 };
-
-
-
-
-
-
-
-#endif
