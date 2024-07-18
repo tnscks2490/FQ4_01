@@ -4,14 +4,12 @@
 #include "Graph/HandyGraphFunctions.h"
 #include "game/EntityManager.h"
 #include "constants.h"
-#include "lua/Raven_Scriptor.h"
 
-#include "Raven_UserOptions.h"
-
+#include "misc/WindowUtils.h"
 
 //uncomment to write object creation/deletion to debug console
 #define  LOG_CREATIONAL_STUFF
-#include "debug/DebugConsole.h"
+//#include "debug/DebugConsole.h"
 
 
 //----------------------------- ctor ------------------------------------------
@@ -37,18 +35,6 @@ Tile_Map1::~Tile_Map1()
 //-----------------------------------------------------------------------------
 void Tile_Map1::Clear()
 {
-    //delete the triggers
-    m_TriggerSystem.Clear();
-
-    //delete the doors
-    std::vector<Raven_Door*>::iterator curDoor = m_Doors.begin();
-    for (curDoor; curDoor != m_Doors.end(); ++curDoor)
-    {
-        delete* curDoor;
-    }
-
-    m_Doors.clear();
-
     std::vector<Wall2D*>::iterator curWall = m_Walls.begin();
     for (curWall; curWall != m_Walls.end(); ++curWall)
     {
@@ -82,30 +68,7 @@ Wall2D* Tile_Map1::AddWall(Vector2D from, Vector2D to)
     return w;
 }
 
-//--------------------------- AddDoor -----------------------------------------
-//-----------------------------------------------------------------------------
-void Tile_Map1::AddDoor(std::ifstream& in)
-{
-    Raven_Door* pDoor = new Raven_Door(this, in);
 
-    m_Doors.push_back(pDoor);
-
-    //register the entity 
-    EntityMgr->RegisterEntity(pDoor);
-}
-
-//--------------------------- AddDoorTrigger ----------------------------------
-//-----------------------------------------------------------------------------
-void Tile_Map1::AddDoorTrigger(std::ifstream& in)
-{
-    Trigger_OnButtonSendMsg<Raven_Bot>* tr = new Trigger_OnButtonSendMsg<Raven_Bot>(in);
-
-    m_TriggerSystem.Register(tr);
-
-    //register the entity 
-    EntityMgr->RegisterEntity(tr);
-
-}
 
 
 //---------------------------- AddSpawnPoint ----------------------------------
@@ -118,45 +81,6 @@ void Tile_Map1::AddSpawnPoint(std::ifstream& in)
 
     m_SpawnPoints.push_back(Vector2D(x, y));
 }
-
-
-//----------------------- AddHealth__Giver ----------------------------------
-//-----------------------------------------------------------------------------
-void Tile_Map1::AddHealth_Giver(std::ifstream& in)
-{
-    Trigger_HealthGiver* hg = new Trigger_HealthGiver(in);
-
-    m_TriggerSystem.Register(hg);
-
-    //let the corresponding navgraph node point to this object
-    NavGraph::NodeType& node = m_pNavGraph->GetNode(hg->GraphNodeIndex());
-
-    node.SetExtraInfo(hg);
-
-    //register the entity 
-    EntityMgr->RegisterEntity(hg);
-}
-
-//----------------------- AddWeapon__Giver ----------------------------------
-//-----------------------------------------------------------------------------
-void Tile_Map1::AddWeapon_Giver(int type_of_weapon, std::ifstream& in)
-{
-    Trigger_WeaponGiver* wg = new Trigger_WeaponGiver(in);
-
-    wg->SetEntityType(type_of_weapon);
-
-    //add it to the appropriate vectors
-    m_TriggerSystem.Register(wg);
-
-    //let the corresponding navgraph node point to this object
-    NavGraph::NodeType& node = m_pNavGraph->GetNode(wg->GraphNodeIndex());
-
-    node.SetExtraInfo(wg);
-
-    //register the entity 
-    EntityMgr->RegisterEntity(wg);
-}
-
 
 //------------------------- LoadMap ------------------------------------
 //
@@ -215,7 +139,7 @@ bool Tile_Map1::LoadMap(const std::string& filename)
     //the map
     extern char* g_szApplicationName;
     extern char* g_szWindowClassName;
-    HWND hwnd = FindWindow(g_szWindowClassName, g_szApplicationName);
+    HWND hwnd = FindWindowA(g_szWindowClassName, g_szApplicationName);
     const int ExtraHeightRqdToDisplayInfo = 50;
     ResizeWindow(hwnd, m_iSizeX, m_iSizeY + ExtraHeightRqdToDisplayInfo);
 
@@ -243,33 +167,9 @@ bool Tile_Map1::LoadMap(const std::string& filename)
 
             AddWall(in); break;
 
-        case type_sliding_door:
-
-            AddDoor(in); break;
-
-        case type_door_trigger:
-
-            AddDoorTrigger(in); break;
-
         case type_spawn_point:
 
             AddSpawnPoint(in); break;
-
-        case type_health:
-
-            AddHealth_Giver(in); break;
-
-        case type_shotgun:
-
-            AddWeapon_Giver(type_shotgun, in); break;
-
-        case type_rail_gun:
-
-            AddWeapon_Giver(type_rail_gun, in); break;
-
-        case type_rocket_launcher:
-
-            AddWeapon_Giver(type_rocket_launcher, in); break;
 
         default:
 
@@ -332,25 +232,6 @@ void Tile_Map1::PartitionNavGraph()
     }
 }
 
-//---------------------------- AddSoundTrigger --------------------------------
-//
-//  given the bot that has made a sound, this method adds a SoundMade trigger
-//-----------------------------------------------------------------------------
-void Tile_Map1::AddSoundTrigger(Raven_Bot* pSoundSource, double range)
-{
-    m_TriggerSystem.Register(new Trigger_SoundNotify(pSoundSource, range));
-}
-
-//----------------------- UpdateTriggerSystem ---------------------------------
-//
-//  givena container of entities in the world this method updates them against
-//  all the triggers
-//-----------------------------------------------------------------------------
-void Raven_Map::UpdateTriggerSystem(std::list<Raven_Bot*>& bots)
-{
-    m_TriggerSystem.Update(bots);
-}
-
 //------------------------- GetRandomNodeLocation -----------------------------
 //
 //  returns the position of a graph node selected at random
@@ -373,22 +254,6 @@ Vector2D Tile_Map1::GetRandomNodeLocation()const
 //-----------------------------------------------------------------------------
 void Tile_Map1::Render()
 {
-    //render the navgraph
-    if (UserOptions->m_bShowGraph)
-    {
-        GraphHelper_DrawUsingGDI<NavGraph>(*m_pNavGraph, Cgdi::grey, UserOptions->m_bShowNodeIndices);
-    }
-
-    //render any doors
-    std::vector<Raven_Door*>::iterator curDoor = m_Doors.begin();
-    for (curDoor; curDoor != m_Doors.end(); ++curDoor)
-    {
-        (*curDoor)->Render();
-    }
-
-    //render all the triggers
-    m_TriggerSystem.Render();
-
     //render all the walls
     std::vector<Wall2D*>::const_iterator curWall = m_Walls.begin();
     for (curWall; curWall != m_Walls.end(); ++curWall)

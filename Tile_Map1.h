@@ -15,6 +15,7 @@
 #include <vector>
 #include <string>
 #include <list>
+#include "TILE_TEST.h"
 #include "graph/SparseGraph.h"
 #include "Graph/GraphEdgeTypes.h"
 #include "Graph/GraphNodeTypes.h"
@@ -24,14 +25,13 @@
 // 타일 추가할것!
 
 class BaseGameEntity;
-class Raven_Door;
 
 
 class Tile_Map1
 {
 public:
 
-    typedef NavPosition<TILE*>         GraphNode;
+    typedef NavPosition<TILE_TEST*>         GraphNode;
     typedef SparseGraph<GraphNode, NavEdge>      NavGraph;
     typedef CellSpacePartition<NavGraph::NodeType*>   CellSpace;
 
@@ -64,11 +64,6 @@ public:
     //stream constructors for loading from a file
     void AddWall(std::ifstream& in);
     void AddSpawnPoint(std::ifstream& in);
-    void AddHealth_Giver(std::ifstream& in);
-    void AddWeapon_Giver(int type_of_weapon, std::ifstream& in);
-    void AddDoor(std::ifstream& in);
-    void AddDoorTrigger(std::ifstream& in);
-
     void Clear();
 
 public:
