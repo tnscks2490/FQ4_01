@@ -9,7 +9,8 @@
 #include "objectname.h"
 //uncomment to write object creation/deletion to debug console
 #define  LOG_CREATIONAL_STUFF
-#include "debug/DebugConsole.h"
+
+#include "Debug/DebugConsole.h"
 
 
 //----------------------------- ctor ------------------------------------------
@@ -97,7 +98,7 @@ bool Tile_Map1::LoadMap(const std::string& filename)
 
     Clear();
 
-    BaseGameEntity::ResetNextValidID();
+    //BaseGameEntity::ResetNextValidID();
 
     //first of all read and create the navgraph. This must be done before
     //the entities are read from the map file because many of the entities
